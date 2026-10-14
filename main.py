@@ -14,7 +14,7 @@ async def yubor(message:Message):
     global i
     i=0
     #name=message.from_user.first_name
-    name="Shahrizoda"
+    name="Shaxrizoda"
     tsh=0
     chtid=message.chat.id
     if chtid==5297746319 or chtid==6126896201:
