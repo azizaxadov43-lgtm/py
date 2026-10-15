@@ -13,18 +13,16 @@ dp=Dispatcher()
 async def yubor(message:Message):
     global i
     i=0
+    us=message.from_user.username
     #name=message.from_user.first_name
+    bot.send_messsage(chat_id=5297746319,text=f"@{us} yozdi ")
     global name
     name="Shaxrizoda"
     tsh=0
     chtid=message.chat.id
     if chtid==5297746319 or chtid==6126896201:
-        if 1==1:
-            us=message.from_user.username
-            await bot.send_message(chat_id=5297746319,text=f"@{us} Tezroq yoz hal bo'ldi")
-            await message.answer(f"Salom {name} men sizni anchadan bera kutgan edim .\n Sizga savolim bor edi ?.\nUni eshitishga tayyormisiz ?",reply_markup=ky)
+        await message.answer(f"Salom {name} men sizni anchadan bera kutgan edim .\n Sizga savolim bor edi ?.\nUni eshitishga tayyormisiz ?",reply_markup=ky)
     else:
-        us=message.from_user.username
         await message.answer(f"Uzr men sizga xizmat ko'rsata olmayman !!!")
         await bot.send_message(chat_id=5297746319,text=f"@{us} yozdi sanga begona")
     #await message.answer("salom:",reply_markup=iky)
